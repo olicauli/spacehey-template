@@ -1,0 +1,109 @@
+:root {
+    --dimentio-purble: #ab64ad;
+    --general-text: rgb(235, 155, 155);
+    --the-yellow: navajowhite;
+    --logo-blue: #5e57c7;
+    --lighter-blue: #ab64ad;
+    accent-color: #1D4ED8;
+    accent-color: var(--logo-blue);
+}
+
+body {
+    background-color: black;
+    background-image: url(./animatedstars.gif);
+    font-family:'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+main, footer {
+    background: black;
+    color: var(--general-text);
+    outline:auto;
+    outline-color: cyan;
+}
+
+a:hover
+{
+    color:antiquewhite;
+    text-decoration-line: none;
+    text-decoration: wavy;
+}
+
+.profile .contact,
+.profile .table-section,
+.setting-sections, .home-actions 
+{
+    border-style: double;
+}
+
+.profile .contact .heading, 
+.profile .contact .heading, 
+.profile .table-section .heading, 
+.setting-section .heading, 
+.home-actions .heading
+{
+    outline: auto;
+    outline-color: var(--dimentio-purble);
+    outline-style: groove;
+}
+
+.url-info
+{
+    border-style: dotted;
+    border-radius: 5%;
+}
+
+
+.profile .blurbs .section h4 {
+    color: var(--the-yellow);
+}
+
+.profile .blurbs .heading, .profile .friends .heading 
+{
+    background: var(--dimentio-purble);
+    outline: auto;
+    outline-color: var(--dimentio-purble);
+    outline-style: groove;
+    color: var(--the-yellow);
+}
+
+.details-table td {
+    background-color: black;
+}
+
+.details-table td:first-child {
+    background-color: #5e57c7;
+    color: var(--general-text);
+}
+
+.comments-table td:first-child {
+    background-color: #5e57c7;
+}
+
+.comments-table td 
+{
+    background-color: black;
+}
+
+footer {
+    background: black;
+    color: white;
+}
+
+a {
+    color: pink;
+}
+
+.online 
+{
+    color:rgb(131, 190, 154);
+}
+
+.online img {
+    display: none;
+}
+
+.mood 
+{
+    outline: auto;
+}

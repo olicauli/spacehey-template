@@ -1,32 +1,148 @@
 :root {
     --dimentio-purble: #ab64ad;
-    --general-text: rgb(235, 155, 155);
-    --the-yellow: navajowhite;
+    --general-text: lavender;
+    --alt-text: pink;
+    --nav-text: rgb(249, 255, 231);
+    --lighter-alt-text: rgb(255, 251, 211);
     --logo-blue: #5e57c7;
+    --bright-yellow: #ffff97;
     --lighter-blue: #ab64ad;
+    --highlight: #fff;
     accent-color: #1D4ED8;
     accent-color: var(--logo-blue);
 }
 
+.container {
+    width: 1000px;
+}
+
 body {
     background-color: black;
-    background-image: url(./animatedstars.gif);
+    background-image: url(assets/animatedstars.gif);
     font-family:'Courier New', Courier, monospace;
     font-size: larger;
 }
 
 main, footer {
-    background: black;
+    background: transparent;
     color: var(--general-text);
-    outline:auto;
-    outline-color: cyan;
 }
 
-a:hover
+nav 
 {
-    color:antiquewhite;
+    color: var(--bright-yellow);
+    letter-spacing: 0.2rem;
+}
+
+nav .top 
+{
+    border-radius: 1%;
+    border-color: var(--logo-blue);
+    border-style: groove;
+    font-size: large;
+    align-items: center;
+}
+
+nav .top .right a, nav .logout-btn
+{
+    font-size: small;
+    text-shadow: 0 0 10px var(--nav-text);
+}
+
+button, input {
+    background-color: var(--bright-yellow);
+    color: var(--dimentio-purble);
+}
+
+
+
+nav .links 
+{
+    margin: 20px 0px 20px 0px;
+    outline:auto;
+    outline-color: var(--dimentio-purble);
+    outline-style: groove;
+    text-align: center;
+    font-size: large;
+}
+
+nav .links a, nav .top a, nav .logout-btn
+{
+    color:var(--nav-text)
+}
+
+nav .links li:not(:last-child)::after
+{
+    content: " * ";
+    font-size: small;
+    color: var(--alt-text);
+}
+
+nav .links a:hover
+{
+    color:var(--lighter-alt-text);
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--nav-text);
+}
+
+nav .links .special a
+{
+    color: var(--nav-text);
+}
+
+.col.w-50 
+{
+    margin: 20px 0px 20px 0px;
+    width:30%;
+}
+
+a:hover, nav .top a:hover, .logout-btn:hover
+{
+    color: var(--highlight);
+    font-style: italic;
     text-decoration-line: none;
-    text-decoration: wavy;
+    text-decoration: none;
+    text-shadow: 0 0 10px var(--highlight);
+}
+
+.details p:first-child
+{
+    font-style: italic;
+    color: var(--bright-yellow);
+}
+
+.blog-preview h4, .profile .blurbs .section h4 
+{
+    color: #ffff97;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.3rem;
+}
+
+.profile h1 
+{
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+    color: var(--bright-yellow);
+    background: linear-gradient(to right, #ffff97, #5e57c7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-info .inner
+{
+    letter-spacing: 0.5rem;
+}
+
+.profile h1::before
+{
+    content: "~*";
+}
+
+.profile h1::after
+{
+    content: "*~";
 }
 
 .profile .contact,
@@ -36,16 +152,8 @@ a:hover
     border-style: double;
 }
 
-.profile .contact .heading, 
-.profile .contact .heading, 
-.profile .table-section .heading, 
-.setting-section .heading, 
-.home-actions .heading
-{
-    outline: auto;
-    outline-color: var(--dimentio-purble);
-    outline-style: groove;
-}
+
+
 
 .url-info
 {
@@ -53,18 +161,24 @@ a:hover
     border-radius: 5%;
 }
 
-
-.profile .blurbs .section h4 {
-    color: var(--the-yellow);
-}
-
-.profile .blurbs .heading, .profile .friends .heading 
+.profile .contact .heading, 
+.profile .contact .heading, 
+.profile .table-section .heading, 
+.setting-section .heading, 
+.home-actions .heading, .profile .blurbs .heading, .profile .friends .heading,
+.profile .contact .heading, .profile .table-section .heading
 {
     background: var(--dimentio-purble);
     outline: auto;
     outline-color: var(--dimentio-purble);
     outline-style: groove;
-    color: var(--the-yellow);
+    color: var(--highlight);
+    letter-spacing: 0.5rem;
+}
+
+a .more 
+{
+    letter-spacing: normal;
 }
 
 .details-table td {
@@ -100,10 +214,9 @@ a {
 }
 
 .online img {
-    display: none;
+    
 }
 
 .mood 
 {
-    outline: auto;
 }

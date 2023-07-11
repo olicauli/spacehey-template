@@ -36,11 +36,14 @@ nav
 
 nav .top 
 {
-    border-radius: 1%;
+    margin: auto;
+    box-sizing: content-box;
+    background: transparent;
     border-color: var(--logo-blue);
     border-style: groove;
     font-size: large;
     align-items: center;
+    margin: 10px;
 }
 
 nav .top .right a, nav .logout-btn
@@ -52,6 +55,11 @@ nav .top .right a, nav .logout-btn
 button, input {
     background-color: var(--bright-yellow);
     color: var(--dimentio-purble);
+}
+
+#q 
+{
+    border-radius: 10% 0% 10% 0%;
 }
 
 
@@ -185,13 +193,19 @@ a .more
     background-color: black;
 }
 
-.details-table td:first-child {
+.details-table td:first-child,
+.comments-table td:first-child 
+ {
     background-color: #5e57c7;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    height:50%;
     color: var(--general-text);
 }
 
-.comments-table td:first-child {
-    background-color: #5e57c7;
+.details-table td:first-child
+{
+    font-style: italic;
 }
 
 .comments-table
@@ -204,7 +218,7 @@ a .more
 {
     outline: auto;
     width: 150px;
-    border-radius: 100%;
+    border-radius: 30% 0% 30% 0%;
     
 }
 
@@ -218,6 +232,7 @@ a .more
 {
     
     box-shadow: 0 0 20px var(--highlight);
+    transform:scale(110%);
 }
 
 

@@ -80,7 +80,7 @@ nav .links li:not(:last-child)::after
 
 nav .links a:hover
 {
-    color:var(--lighter-alt-text);
+    color: white;
     text-decoration: none;
     text-shadow: 0 0 10px var(--nav-text);
 }
@@ -116,7 +116,7 @@ a:hover, nav .top a:hover, .logout-btn:hover
     color: #ffff97;
     text-align: center;
     font-weight: normal;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 
 .profile h1 
@@ -194,9 +194,50 @@ a .more
     background-color: #5e57c7;
 }
 
+.comments-table
+{
+    border: hidden;
+}
+
+.comments-table td:first-child img:not(.icon),
+.profile .friends .person img:not(.icon)
+{
+    outline: auto;
+    width: 150px;
+    border-radius: 100%;
+    
+}
+
+.profile .friends .person img:not(.icon)
+{
+    width: 100px;
+}
+
+.comments-table td:first-child img:not(.icon):hover,
+.profile .friends .person img:not(.icon):hover
+{
+    
+    box-shadow: 0 0 20px var(--highlight);
+}
+
+
 .comments-table td 
 {
     background-color: black;
+    outline: auto;
+    outline-style: dashed;
+    outline-color: var(--dimentio-purble);
+}
+
+.comment-replies
+{
+    border: hidden;
+}
+
+tbody, td, tr
+{
+    border: hidden;
+    outline-color: var(--dimentio-purble);
 }
 
 footer {

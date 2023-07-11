@@ -1,10 +1,12 @@
 :root {
     --dimentio-purble: #ab64ad;
+    --darker-purble: #782f7a;
     --general-text: lavender;
     --alt-text: pink;
     --nav-text: rgb(249, 255, 231);
     --lighter-alt-text: rgb(255, 251, 211);
     --logo-blue: #5e57c7;
+    --darker-blue: #1f2d69;
     --bright-yellow: #ffff97;
     --lighter-blue: #ab64ad;
     --highlight: #fff;
@@ -36,14 +38,14 @@ nav
 
 nav .top 
 {
-    margin: auto;
     box-sizing: content-box;
     background: transparent;
     border-color: var(--logo-blue);
-    border-style: groove;
+    border-style:double;
+    border-radius: 10px;
     font-size: large;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 nav .top .right a, nav .logout-btn
@@ -55,6 +57,12 @@ nav .top .right a, nav .logout-btn
 button, input {
     background-color: var(--bright-yellow);
     color: var(--dimentio-purble);
+    border-radius: 10px;
+}
+
+input:focus
+{
+    box-shadow: 0 0 20px var(--highlight);
 }
 
 #q 
@@ -66,10 +74,8 @@ button, input {
 
 nav .links 
 {
-    margin: 20px 0px 20px 0px;
-    outline:auto;
-    outline-color: var(--dimentio-purble);
-    outline-style: groove;
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--dimentio-purble), var(--logo-blue));
     text-align: center;
     font-size: large;
 }
@@ -121,7 +127,8 @@ a:hover, nav .top a:hover, .logout-btn:hover
 
 .blog-preview h4, .profile .blurbs .section h4 
 {
-    color: #ffff97;
+    color: var(--bright-yellow);
+    font-style: italic;
     text-align: center;
     font-weight: normal;
     letter-spacing: 0.1rem;
@@ -157,16 +164,7 @@ a:hover, nav .top a:hover, .logout-btn:hover
 .profile .table-section,
 .setting-sections, .home-actions 
 {
-    border-style: double;
-}
-
-
-
-
-.url-info
-{
-    border-style: dotted;
-    border-radius: 5%;
+    border: hidden;
 }
 
 .profile .contact .heading, 
@@ -177,14 +175,26 @@ a:hover, nav .top a:hover, .logout-btn:hover
 .profile .contact .heading, .profile .table-section .heading
 {
     background: var(--dimentio-purble);
-    outline: auto;
-    outline-color: var(--dimentio-purble);
-    outline-style: groove;
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--dimentio-purble), var(--logo-blue));
     color: var(--highlight);
     letter-spacing: 0.5rem;
 }
 
-a .more 
+.profile .contact .heading::before, 
+.profile .contact .heading::before, 
+.profile .table-section .heading::before, 
+.setting-section .heading::before, 
+.home-actions .heading::before, .profile .blurbs .heading::before,
+ .profile .friends .heading::before,
+.profile .contact .heading::before, 
+.profile .table-section .heading::before
+{
+    content: "* ";
+    color: pink;
+}
+
+.profile .friends .heading a.more 
 {
     letter-spacing: normal;
 }
@@ -197,10 +207,17 @@ a .more
 .comments-table td:first-child 
  {
     background-color: #5e57c7;
+    background: linear-gradient(180deg, var(--logo-blue), var(--darker-blue));
     letter-spacing: 0.2rem;
     text-align: center;
+    border-radius: 10px;
     height:50%;
     color: var(--general-text);
+}
+
+.comments-table td:first-child
+{
+    border-radius: 20% 0px 20% 0px;
 }
 
 .details-table td:first-child
@@ -218,7 +235,7 @@ a .more
 {
     outline: auto;
     width: 150px;
-    border-radius: 30% 0% 30% 0%;
+    border-radius: 20% 0px 20% 0px;
     
 }
 
@@ -238,13 +255,11 @@ a .more
 
 .comments-table td 
 {
-    background-color: black;
-    outline: auto;
-    outline-style: dashed;
-    outline-color: var(--dimentio-purble);
+    background-color: transparent;
+    
 }
 
-.comment-replies
+.comment-replies, .profile .url-info
 {
     border: hidden;
 }
@@ -267,6 +282,7 @@ a {
 .online 
 {
     color:rgb(131, 190, 154);
+    text-shadow: 0 0 10px var(--highlight);
 }
 
 .online img {

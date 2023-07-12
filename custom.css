@@ -200,7 +200,7 @@ a:hover, nav .top a:hover, .logout-btn:hover
 }
 
 .details-table td {
-    background-color: black;
+    background-color: transparent;
 }
 
 .details-table td:first-child,
@@ -271,7 +271,7 @@ tbody, td, tr
 }
 
 footer {
-    background: black;
+    background: transparent;
     color: white;
 }
 
@@ -281,14 +281,95 @@ a {
 
 .online 
 {
-    color:rgb(131, 190, 154);
+    color:#83be9a;
     text-shadow: 0 0 10px var(--highlight);
 }
 
-.online img {
-    
+.online::before
+{
+    content: url('assets/online.gif');
 }
 
-.mood 
+.online img {
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) img 
 {
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a::before 
+{
+    content: url("./assets/dimentio.gif");
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a::before 
+{
+    content: url("./assets/message.gif");
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a::before 
+{
+    content: url("./assets/instantmessage.gif");
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a::before 
+{
+    content: url("./assets/group.gif");
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a::before 
+{
+    content: url("./assets/favourite.gif");
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a::before 
+{
+    content: url("./assets/forward.gif");
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a::before 
+{
+    content: url("./assets/block.gif");
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) img 
+{
+    display: none;
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a::before 
+{
+    content: url("./assets/report.gif");
 }

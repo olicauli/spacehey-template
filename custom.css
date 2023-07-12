@@ -373,3 +373,20 @@ a {
 {
     content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/report.gif");
 }
+
+.blog-preview p .pinned .icon 
+{
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/favourite.gif");
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.comments-table .report a img
+{
+    display: none;
+}
+
+.comments-table .report::before
+{
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/block.gif");
+}

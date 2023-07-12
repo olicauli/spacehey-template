@@ -20,7 +20,7 @@
 
 body {
     background-color: black;
-    background-image: url(assets/animatedstars.gif);
+    background-image: url('https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/animatedstars.gif');
     font-family:'Courier New', Courier, monospace;
     font-size: larger;
 }
@@ -287,7 +287,7 @@ a {
 
 .online::before
 {
-    content: url('assets/online.gif');
+    content: url('https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/online.gif');
 }
 
 .online img {
@@ -301,7 +301,7 @@ a {
 
 .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a::before 
 {
-    content: url("./assets/dimentio.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/dimentio.gif");
 }
 
 .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) img 
@@ -311,7 +311,7 @@ a {
 
 .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a::before 
 {
-    content: url("./assets/message.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/message.gif");
 }
 
 .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) img 
@@ -321,7 +321,7 @@ a {
 
 .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a::before 
 {
-    content: url("./assets/instantmessage.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/instantmessage.gif");
 }
 
 .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) img 
@@ -331,7 +331,7 @@ a {
 
 .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a::before 
 {
-    content: url("./assets/group.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/group.gif");
 }
 
 .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) img 
@@ -341,7 +341,7 @@ a {
 
 .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a::before 
 {
-    content: url("./assets/favourite.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/favourite.gif");
 }
 
 .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) img 
@@ -351,7 +351,7 @@ a {
 
 .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a::before 
 {
-    content: url("./assets/forward.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/forward.gif");
 }
 
 .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) img 
@@ -361,7 +361,7 @@ a {
 
 .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a::before 
 {
-    content: url("./assets/block.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/block.gif");
 }
 
 .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) img 
@@ -371,5 +371,5 @@ a {
 
 .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a::before 
 {
-    content: url("./assets/report.gif");
+    content: url("https://raw.githubusercontent.com/olicauli/spacehey-template/main/assets/report.gif");
 }

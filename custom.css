@@ -104,6 +104,17 @@ nav .links .special a
     color: var(--nav-text);
 }
 
+ul
+{
+    list-style: url('assets/li.gif') inside;
+    margin-left:10px;
+}
+
+.table-section .details-table td:last-child ul
+{
+    display: inline;
+}
+
 .col.w-50 
 {
     margin: 20px 0px 20px 0px;
@@ -220,9 +231,55 @@ a:hover, nav .top a:hover, .logout-btn:hover
     border-radius: 20% 0px 20% 0px;
 }
 
-.details-table td:first-child
+.table-section:not(:last-child) .details-table td:first-child
 {
     font-style: italic;
+    color: transparent !important;
+    text-shadow: none !important;
+    letter-spacing: -100px;
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(1) 
+td:first-child p::after
+{
+    content: "General";
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(2) 
+td:first-child p::after
+{
+    content: "Games";
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(3) 
+td:first-child p::after
+{
+    content: "Movies";
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(4) 
+td:first-child p::after
+{
+    content: "TV series";
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(5) 
+td:first-child p::after
+{
+    content: "Books";
+}
+
+.table-section:not(:last-child) .details-table tr:nth-child(6) 
+td:first-child p::after
+{
+    content: "Music";
+}
+
+.details-table tr td:first-child p::after 
+{
+    color: var(--general-text) !important;
+    letter-spacing: 0.2rem;
+    text-shadow: 1px 1px 2px pink;
 }
 
 .comments-table

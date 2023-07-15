@@ -106,8 +106,29 @@ nav .links .special a
 
 ul
 {
-    list-style: url('assets/li.gif') inside;
-    margin-left:10px;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.table-section li 
+{
+    font-style: italic;
+    color: pink;
+    display: inline-block;
+    margin: 0px;
+}
+
+.table-section li::before
+{
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    margin-left: -6px;
+    content: "";
+    background: url(assets/li.gif);
+    background-size: 100%;
+    color:pink;
+    margin-top: -5px;
 }
 
 .table-section .details-table td:last-child ul
